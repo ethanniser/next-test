@@ -8,7 +8,7 @@ specifiers:
   eslint: 8.42.0
   eslint-config-next: 13.4.4
   next: 13.4.4
-  next-typesafe-url: 2.1.3-beta.6
+  next-typesafe-url: 2.1.3-beta.9
   postcss: 8.4.24
   react: 18.2.0
   react-dom: 18.2.0
@@ -24,7 +24,7 @@ dependencies:
   eslint: 8.42.0
   eslint-config-next: 13.4.4_tizxnkcvjrb4cldxgwq5h3lj5u
   next: 13.4.4_biqbaboplfbrettd7655fr4n2y
-  next-typesafe-url: 2.1.3-beta.6_quchaumlmzn6zpyg5hrnqt2snu
+  next-typesafe-url: 2.1.3-beta.9_quchaumlmzn6zpyg5hrnqt2snu
   postcss: 8.4.24
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -2049,8 +2049,8 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
-  /next-typesafe-url/2.1.3-beta.6_quchaumlmzn6zpyg5hrnqt2snu:
-    resolution: {integrity: sha512-+c5nZI+czTL6HZ5uWa6yO8WAzLhvRL9X49ELnSyaOWZqKXkpjtLSUo2+Hbax8qS4aZ1rSB1i8TVWj2z5phNxYQ==}
+  /next-typesafe-url/2.1.3-beta.9_quchaumlmzn6zpyg5hrnqt2snu:
+    resolution: {integrity: sha512-+Incega2bTkZ3MUIqKRC3TVZU7iXyMNZYtIGaM4PrWNtXYSluUAFs3sfREXeIYRUQk7fjB54oM8ASC/V3WJWbg==}
     hasBin: true
     peerDependencies:
       next: ^13.2.3
