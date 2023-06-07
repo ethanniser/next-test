@@ -43,7 +43,7 @@ function InnerSkeleton({ tictactoe }: { tictactoe: Grid }) {
         <h1 className="text-5xl mt-10">{`YOU ARE "O", COMPUTER IS "X"`}</h1>
 
         <h2 className="text-3xl font-bold mt-5">{"computer is thinking..."}</h2>
-        <TicTacToeBord tictactoe={tictactoe} />
+        <TicTacToeBord tictactoe={tictactoe} blockClicks />
         <div>
           <a
             href={$path({
@@ -124,7 +124,13 @@ async function Inner({
   );
 }
 
-function TicTacToeBord({ tictactoe }: { tictactoe: Grid }) {
+function TicTacToeBord({
+  tictactoe,
+  blockClicks = false,
+}: {
+  tictactoe: Grid;
+  blockClicks?: boolean;
+}) {
   return (
     <div className="flex flex-col items-center justify-center w-[600px] -mt-16">
       {tictactoe.map((row, rowIndex) => (
@@ -142,6 +148,7 @@ function TicTacToeBord({ tictactoe }: { tictactoe: Grid }) {
                     tictactoe: flipCell(tictactoe, rowIndex, colIndex),
                   },
                 })}
+                style={blockClicks ? { pointerEvents: "none" } : {}}
               >
                 {tictactoe[rowIndex][colIndex]}
               </a>
